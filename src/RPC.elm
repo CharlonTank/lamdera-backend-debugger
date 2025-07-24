@@ -24,10 +24,6 @@ cleanDebugString text =
         |> String.replace "\\n" "\n"
         |> String.replace "\\t" "\t"
         |> String.replace "\\r" "\u{000D}"
-        |> String.replace "SeqDict.fromList " ""
-        |> String.replace "Set.fromList " ""
-        |> String.replace "Dict.fromList " ""
-        |> String.replace "Array.fromList " ""
         |> String.replace "\\\"" "'"
 
 
